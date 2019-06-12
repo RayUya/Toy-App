@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/toy"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+           android:background="@drawable/toy"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_toEndOf="@id/toy"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000"
+            android:text="The Toy App" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_toEndOf="@id/toy"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:fontFamily="cursive"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="60dp"
+            android:textColor="#000"
+            android:text="40 toys " />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:id="@+id/play_items"/>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+
+
